@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  grid-gap: 10px;
+  background-color: lightblue;
+  padding: 10px;
+}
+.grid-container > div {
+  text-align: left;
+  padding: 20px 0;
+  font-size: 18px;
+}
+.item2 {
+  width: 350px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.item2 a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.item2 a:hover {
+  background-color: #ccc;
+}
+
+.item2 a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.item1 {
+  border: 5px outset green;
+  background-color: lightblue;    
+  text-align: center;
+}
+</style>
+</head>
+<body style="background-color:powderblue;">
+  <div class="grid-container">
+  <div class="item1">
+<h2 style="text-align:center"><b>Adding SQLAlchemy, Jinja support to flask framework deployed to Elastic Beanstalk</b></h2>
+</div>
+<!-- Sidebar -->
+<div class="item2">
+
+  <a href="Project2.html""#">Introduction</a>
+  <a href="flaskframework.html""#">What is Flask Framework?</a>
+  <a href="startup.html""#">Installation</a>
+  <a href="SQLAlchemy.html""#">Connecting to the database using SQLAlchemy</a>
+  <a href="databaseobjects.html""#" class="active">Defining Database objects in Flask</a>
+  <a href="file:///C:/Users/STSC/Desktop/Flask project tutorial/database.html""#">Managing the database</a>
+  <a href="file:///C:/Users/STSC/Desktop/Flask project tutorial/URLconfig.html""#">Views and URL config</a>
+  <a href="file:///C:/Users/STSC/Desktop/Flask project tutorial/jinjatemplate.html""#">Template creation using JINJA</a>
+  <a href="file:///C:/Users/STSC/Desktop/Flask project tutorial/elasticbeanstalk.html""#">Deploying Flask App to Elastic Beanstalk</a>
+  <a href="file:///C:/Users/STSC/Desktop/Flask project tutorial/Implementation.html""#">Implementation</a>
+  <a href="file:///C:/Users/STSC/Desktop/Flask project tutorial/Whyflask.html""#">Why Flask?</a>
+  <a href="file:///C:/Users/STSC/Desktop/Flask project tutorial/flaskusage.html""#">List of Companies Actively using Flask</a>
+<a href="file:///C:/Users/STSC/Desktop/Flask project tutorial/conclusion.html""#">Conclusion</a>
+  <a href="file:///C:/Users/STSC/Desktop/Flask project tutorial/references.html""#">References</a>
+</div>
+<div class="item3">
+  <h1><b><u>Defining Database objects in Flask</u></b></h1>
+  <p>The Flask-SQLAlchemy package makes use of SQLAlchemy to set up and inform the database structure.Database models consist of Columns, which are data types unique to sqlalchemy. An object could contain multiple Columns based on the business use case.SQLAlchemy will perform the CRUD operations on this object as an ORM.</p>
+</div>
+
+</div>
+
+</body>
+</html>

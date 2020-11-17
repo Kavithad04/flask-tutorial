@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+.header {
+      margin-left: 240px;
+      padding: 10px 16px;
+      background: #D6D6D6;
+      /*color: #f1f1f1;*/
+      font-size: 25px;
+
+    }
+.sidenav {
+      height: 100%;
+      width: 240px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #FEC8D8;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      color: white;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      color: black;
+    }
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main';
+  grid-gap: 5px;
+  background-color: white;
+  padding: 5px;
+}
+.grid-container > div {
+  text-align: left;
+  font-size: 16px;
+  font-style: courier;
+}
+.item2 {
+  width: 250px;
+  height: 100%;
+  margin-top: 47px;
+  overflow-y: auto;
+  float: left;
+  position: absolute;
+}
+
+.item2 a {
+  background-color: #D8D8D8;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.item2 a:hover {
+  background-color: #ccc;
+}
+
+.item2 a.active {
+  background-color: #AC58FA;
+  color: white;
+}
+.item1 {
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  background-color:white;    
+  text-align: center;
+  height: 50px;
+  position: fixed;
+  width: 1300px;
+  z-index: 1000;
+}
+.item3{
+ 
+  margin-left: 295px;
+  position: absolute;
+  float: right;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #9A2EFE;
+  color: white;
+  margin-left: 265px;
+}
+
+.next {
+  background-color: #9A2EFE;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+p.groove {border-style: groove;}{
+
+  }
+
+</style>
+</head>
+<body style="background-color:white;">
+   
+  <div class="header" id="myHeader">
+      <h2><b>CRUD Application using Flask Framework</b></h2>
+ </div>
+<div class="grid-container">
+<!-- Sidebar -->
+<div class="sidenav">
+<img class="center" src="Images\flask.png" alt="" width="100x" height="100px">
+<br>
+  <a href="Project2.html""#" >Introduction</a>
+  <a href="flaskframework.html""#">Flask Framework</a>
+  <a href="startup.html""#">Installation</a>
+  <a href="Basicflaskapp.html""#">Basic Flask app</a>
+  <a href="Routing.html""#">Routing</a>
+  <a href="dynamic_URL.html""#">Dynamic URL & HTTP request Methods</a>
+  <a href="jinjatemplate.html""#">JINJA_2 Template</a>
+  <a href="SQLAlchemy.html""#">SQLAlchemy</a>
+  <a href="Models.html""#">Flask Models</a>
+  <a href="database.html""#" >CRUD operations</a>
+  <a href="elasticbeanstalk.html""#" >Elastic Beanstalk</a>
+  <a href="Implementation.html""#">Implementation</a>
+  <a href="Whyflask.html""#">Why Flask?</a>
+  <a href="flaskusage.html""#">Companies using Flask</a>
+<a href="conclusion.html""#">Conclusion</a>
+  <a href="references.html""#" class="active">References</a>
+</div>
+<div class="item3">
+
+  <!--<h4><b>Table of content</b></h4>
+  <li>Introduction</li>
+  <li>Flask Framework?</li>
+  <li>Startup and configuration</li>
+  <li>Connecting to the database using SQLAlchemy</li>
+  <li>Managing the database</li>
+  <li>Views and URL config</li>
+  <li>Template creation using JINJA</li>
+  <li>Deploying Flask App to Elastic Beanstalk</li>
+  <li>Implementation</li>
+  <li>Why Flask?</li>
+  <li>List of Companies Actively using Flask</li>
+  <li>Conclusion</li>-->
+  <br>
+  <h2 style="color:brown"><b>References</b></h2>
+  <ul>
+  <li>1.Flask(web Framework) Developed by Armin Ronacher. Wikipedia. Available at<a style="color:blue"href="https://en.wikipedia.org/wiki/Flask_(web_framework)">https://en.wikipedia.org/wiki/Flask_(web_framework)</a>Accessed from April 1,2010</li>
+  
+  <li>2.Nichoals Hunt Walker.An Introduction to the Flask Python web app Framework.Opensource.com. Available at<a style="color:blue"href="https://opensource.com/article/18/4/flask">https://opensource.com/article/18/4/flask</a> Accessed from April 02 2018</li>
+  
+  <li>3.Deploying a Flask application to Elastic Beanstalk. Amazon web services. Available at<a style="color:blue"href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html">https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html</a></li>
+  
+  <li>4.Jakub Protasiewicz. Flask vs Django Comparison. Netguru.com. Available at<a style="color:blue"href="https://www.netguru.com/blog/flask-vs-django">https://www.netguru.com/blog/flask-vs-django</a>Accessed from Jun 2, 2018</li>
+  
+  <li>5.Kiran CV. Getting started with Database schema migration(Flask-Migrate). Qxf2 Services. Available at<a style="color:blue"href="https://qxf2.com/blog/database-migration-flask-migrate">https://qxf2.com/blog/database-migration-flask-migrate</a>Accessed from Feb 13,2020</li>
+  
+  <li>6.Flask Pallet Project. Templates. Available at<a style="color:blue"href="https://flask.palletsprojects.com/en/1.1.x/templating/">https://flask.palletsprojects.com/en/1.1.x/templating/</a>Accessed from 2010.</li>
+ 
+</ul> 
+<br>
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>
